@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="box" type="text" value="">
+    <input id="box1"type="button"value="确认">
+</body>
+</html>
+<script>
+    var oBox=document.getElementById("box");
+    var oBox1=document.getElementById("box1");
+        oBox1.onclick=function () {
+            oBox.value=oBox1.value;
+        }
+</script>

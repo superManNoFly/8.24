@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div{
+            width: 200px;
+            height:200px;
+            border: 2px solid #eee;
+        }
+    </style>
+    <script>
+        window.onload=function () {
+
+
+//        var Name="伊泽瑞尔";
+        var oDiv=document.getElementById("div");
+        var oText=document.getElementById("text");
+        var oBut=document.getElementById("but");
+            oBut.onclick=function () {
+                oDiv.innerHTML=oDiv.innerHTML+"<p>"+"伊泽瑞尔"+"</p>"+"<p>"+oText.value+"</p>"
+                oText.value="";
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="div"></div>
+<input  id="text" type="text" value="">
+<input  id="but" type="button" value="确认">
+</body>
+</html>

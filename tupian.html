@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="box" type="text" value="">
+    <input id="box1"type="button" value="确认">
+    <img id="img" src="img/1.jpg" alt="">
+</body>
+</html>
+<script>
+    var oBox=document.getElementById("box");
+    var oBox1=document.getElementById("box1");
+    var oImg=document.getElementById("img");
+        oBox1.onclick=function () {
+            oImg.src=oBox.value;
+        }
+</script>
